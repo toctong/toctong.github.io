@@ -56,10 +56,16 @@ export const getTimeRemaining = () => {
  * @return {number} 返回的天数
  */
 export const getDaysUntil = (dateStr) => {
-  const now = dayjs();
-  const targetDate = dayjs(dateStr);
-  const daysUntil = targetDate.diff(now, "day");
-  return daysUntil;
+  // 统一到「天」的粒度，去掉时间部分的影响
+  const now = dayjs().startOf("day");
+  const targetDate = dayjs(dateStr).startOf("day");
+  const diff = targetDate.diff(now, "day");
+
+  // 已经过了目标日期，倒计时归零
+  if (diff < 0) return 0;
+
+  // 包含目标当天在内，更符合「还有几天就过节」的直觉
+  return diff + 1;
 };
 
 /**

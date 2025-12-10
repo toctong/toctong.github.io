@@ -14,11 +14,12 @@
   </div>
   <div
     v-else-if="type === 'page'"
-    :class="['banner-page', 's-card', { image }]"
+    :class="['banner-page', 's-card', { image: image || video }]"
     :style="{
-      backgroundImage: image ? `url(${image})` : null,
+      backgroundImage: !video && image ? `url(${image})` : null,
     }"
   >
+    <video v-if="video" class="banner-video" :src="video" autoplay loop muted playsinline />
     <div class="top">
       <div class="title">
         <span class="title-small">{{ title }}</span>
@@ -74,6 +75,11 @@ const props = defineProps({
   },
   // 背景
   image: {
+    type: String,
+    default: "",
+  },
+  // 视频背景
+  video: {
     type: String,
     default: "",
   },
@@ -199,6 +205,24 @@ onBeforeUnmount(() => {
   padding: 2rem;
   min-height: 380px;
   background-size: cover;
+  overflow: hidden;
+
+  .banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+
+  .top,
+  .footer,
+  :deep(> *) {
+    position: relative;
+    z-index: 1;
+  }
   .top {
     display: flex;
     flex-direction: row;

@@ -4,16 +4,19 @@
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
       <!-- 介绍 -->
       <div class="about-item hello">
-        <span class="text1">你好，很高兴认识你👋</span>
-        <span class="text2 title2">我是 無名</span>
-        <span class="text3">是一名 前端开发工程师、独立开发者、博主</span>
+        <span class="text1">你好，很高兴在「大神之路」这条卷不完的路上遇见你 👋</span>
+        <span class="text2 title2">我是 刘晓迪</span>
+        <span class="text3"
+          >一名还在打怪升级的开发者，主要技能点加在 Vue / React / Node.js / NestJS / MySQL /
+          Docker，顺便把一路踩过的坑都记下来。</span
+        >
       </div>
       <!-- 追求 -->
       <div class="about-item pursuit">
         <span class="tip">追求</span>
-        <span class="title2">源于</span>
-        <span class="title2">热爱而去开发</span>
-        <span class="title2">优秀的作品</span>
+        <span class="title2">少踩坑</span>
+        <span class="title2">多总结</span>
+        <span class="title2">能帮到别人就更好了</span>
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 2fr 3fr">
@@ -41,44 +44,42 @@
       <div class="about-item career">
         <span class="tip">生涯</span>
         <span class="title2">
-          <i>無限進步</i>
+          <i>在路上的开发者</i>
         </span>
         <div class="list">
-          <span class="list-item" style="--color: #357ef5">ZZRVTC · 计算机应用技术</span>
-          <span class="list-item" style="--color: #eb372a">FE · 前端开发工程师</span>
+          <span class="list-item" style="--color: #357ef5">专注 Web / 全栈方向的持续学习</span>
+          <span class="list-item" style="--color: #eb372a">用实践项目和博客文章记录成长</span>
         </div>
         <img
           class="career-img"
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d71db18bcf9.png"
+          src="https://via.placeholder.com/800x260?text=%E5%BC%80%E5%8F%91%E8%BF%9B%E8%A1%8C%E4%B8%AD"
           alt="career"
         />
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 3fr 2fr">
-      <!-- 性格 -->
+      <!-- 性格 / 标签 -->
       <div class="about-item character" style="--color: #4298b4">
-        <span class="tip">性格</span>
-        <span class="title2">物流师</span>
-        <span class="title2" style="color: var(--color)">ISTJ-A / ISTJ-T</span>
+        <span class="tip">标签</span>
+        <span class="title2">认真、爱折腾、爱瞎折腾</span>
+        <span class="title2" style="color: var(--color)"
+          >看到报错不会关电脑，而是先截图再查文档</span
+        >
         <span class="more">
-          在
-          <a href="https://www.16personalities.com/ch/" target="_blank">16personalities</a>
-          了解更多关于
-          <a href="https://www.16personalities.com/ch/istj-%E4%BA%BA%E6%A0%BC" target="_blank">
-            物流师
-          </a>
+          这里记录的是我在「大神之路」上的思考、实践和踩坑故事，
+          希望你看完之后，至少能少踩一两个同款的坑。
         </span>
         <img
-          src="https://pic.efefee.cn/uploads/2024/02/22/65d6bc7ae72ae.png"
-          alt="male"
+          src="https://via.placeholder.com/260x260?text=%E7%A7%81%E4%BA%BA%E5%83%8F"
+          alt="author"
           class="male"
         />
       </div>
       <!-- 座右铭 -->
       <div class="about-item">
         <span class="tip">座右铭</span>
-        <span class="title1" style="margin-top: 20px">脚踏实地，</span>
-        <span class="title2">一丝不苟。</span>
+        <span class="title1" style="margin-top: 20px">今天写一点，</span>
+        <span class="title2">总有一天看起来像个大神。</span>
       </div>
     </div>
     <div class="about-content" style="grid-template-columns: 1fr 1fr">
@@ -86,7 +87,7 @@
         class="about-item like image"
         style="
           --color: #0c0e20;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd812567723.webp);
+          background-image: url(https://via.placeholder.com/800x400?text=%E6%95%B0%E7%A0%81%E7%A7%91%E6%8A%80);
         "
       >
         <div class="image-content">
@@ -101,7 +102,7 @@
         class="about-item like image"
         style="
           --color: #7b3c25;
-          background-image: url(https://pic.efefee.cn/uploads/2024/02/27/65dd836099d16.webp);
+          background-image: url(https://via.placeholder.com/800x400?text=%E9%9F%B3%E4%B9%90%E6%97%B6%E5%88%BB);
         "
       >
         <div class="image-content">
@@ -119,7 +120,7 @@
         class="about-item static image"
         style="
           --color: #0f1114;
-          background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661c8fbf226d3.webp);
+          background-image: url(https://via.placeholder.com/800x400?text=%E7%AB%99%E7%82%B9%E7%BB%9F%E8%AE%A1);
         "
       >
         <div class="image-content">
@@ -142,18 +143,22 @@
       <div class="about-item child">
         <div
           class="about-item map image"
-          style="background-image: url(https://pic.efefee.cn/uploads/2024/04/15/661cbccc56af5.webp)"
+          style="
+            background-image: url(https://via.placeholder.com/800x400?text=%E4%B8%AD%E5%9B%BD%20China);
+          "
         >
-          <span class="position">我现在住在 <strong>中国，河南省</strong></span>
+          <span class="position"
+            >我现在住在 <strong>中国</strong>，大部分时间在键盘前和 bug 对线</span
+          >
         </div>
         <div class="about-item info">
           <div class="info-item">
-            <span class="info-name">生于</span>
-            <span class="info-num" style="--color: #43a6c6">2001</span>
+            <span class="info-name">博客创建于</span>
+            <span class="info-num" style="--color: #43a6c6">2025</span>
           </div>
           <div class="info-item">
-            <span class="info-name">现在职业</span>
-            <span class="info-num" style="--color: #dfac46">前端开发工程师</span>
+            <span class="info-name">当前方向</span>
+            <span class="info-num" style="--color: #dfac46">全栈开发学习</span>
           </div>
         </div>
       </div>
@@ -162,15 +167,17 @@
     <div class="about-content" style="display: flex">
       <div class="about-item">
         <span class="tip">心路历程</span>
-        <span class="title2">为什么建站？</span>
+        <span class="title2">为什么有「大神之路」？</span>
         <p class="text">
-          创建这个站的时候，想要就是能够有一个自己能够<strong>积累知识</strong>、<strong>积累兴趣</strong>的地方。和他人分享，会让这些成为<strong>积累和沉淀</strong>。如果能够帮助到更多的人，帮助更多人解决问题，那一定是非常棒的事情。
+          搭建这个站的时候，很简单的想法就是：与其每次遇到问题都「百度一时爽，过后全忘光」，不如老老实实<strong>记笔记</strong>、<strong>记踩坑</strong>，给未来的自己留一点活路。
         </p>
         <p class="text">
-          这里大多都是<strong>技术向</strong>的文章，可能不太会有很多人看，权当是做个自我记录吧。当然，如果某篇文章能够帮助到你，那我也是很开心的。
+          这里大部分是围绕 Vue / React / Node.js / NestJS / MySQL / Docker
+          的技术文章，内容从「怎么搭起来」到「为什么又挂了」，风格偏「学习笔记 +
+          踩坑记录」，不保证优雅，但保证是真实踩过的坑。
         </p>
         <p class="text">
-          这些就是创造这个小站的本意，<strong>也是我分享生活的方式</strong>。有幸能和你相遇在这里，相信我们能共同留下一段美好记忆。
+          如果这些内容刚好也帮到了你，那我们就算是一起在刷同一条经验条了。很高兴能和你在这里相遇，祝我们都能早日从「菜鸟新手村」毕业，向真正的大神靠近一点点。
         </p>
       </div>
     </div>
