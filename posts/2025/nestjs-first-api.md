@@ -1,5 +1,5 @@
 ---
-title: NestJS 学习笔记：从 0 到第一个带鉴权的接口
+title: NestJS 学习笔记：从0到1实现鉴权的接口
 tags: [Node.js, NestJS, REST API, 学习笔记, 踩坑记录]
 categories: [后端]
 date: 2025-01-15
