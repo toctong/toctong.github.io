@@ -2,7 +2,7 @@
 title: 在飞牛 NAS 上用 Docker 折腾 CloudSave、quark-auto-save、v2raya
 tags: [NAS, Docker, 自建服务, 踩坑记录]
 categories: [NAS]
-date: 2025-02-10
+date: 2025-12-10
 description: 记录我在飞牛 NAS 上用 Docker 部署 CloudSave、quark-auto-save、v2raya、飞牛影视和飞牛图库的过程，以及中间踩过的一些小坑。
 articleGPT: 这是一篇 NAS 折腾记录，主要围绕在飞牛 NAS 上通过 Docker 部署 CloudSave、quark-auto-save、v2raya、飞牛影视和飞牛图库，顺带整理一下网络、端口、持久化卷以及自动化的注意事项。
 references: []

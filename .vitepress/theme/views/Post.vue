@@ -53,8 +53,10 @@
     <div class="post-content">
       <article class="post-article s-card">
         <!-- 过期提醒 -->
-        <div class="expired s-card" v-if="postMetaData?.expired >= 180">
-          本文发表于 <strong>{{ postMetaData?.expired }}</strong> 天前，其中的信息可能已经事过境迁
+        <div class="expired s-card">
+          本文发表于
+          <strong>{{ dayjs(postMetaData.date).format("YYYY-MM-DD") }}</strong>
+          发布
         </div>
         <!-- AI 摘要 -->
         <ArticleGPT />
@@ -103,6 +105,7 @@
 import { formatTimestamp } from "@/utils/helper";
 import { generateId } from "@/utils/commonTools";
 import initFancybox from "@/utils/initFancybox";
+import dayjs from "dayjs";
 
 const { page, theme, frontmatter } = useData();
 
@@ -113,6 +116,15 @@ const commentRef = ref(null);
 const postMetaData = computed(() => {
   const postId = generateId(page.value.relativePath);
   return theme.value.postData.find((item) => item.id === postId);
+});
+
+// 计算文章已发布天数：按天精度比较当前日期和文章发布日期
+const expiredDays = computed(() => {
+  if (!postMetaData.value?.date) return 0;
+  const nowDay = dayjs().startOf("day");
+  const postDay = dayjs(postMetaData.value.date).startOf("day");
+  const diff = nowDay.diff(postDay, "day");
+  return dayjs(diff).format("DD/MM/YYYY");
 });
 
 onMounted(() => {

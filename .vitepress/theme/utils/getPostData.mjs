@@ -2,6 +2,7 @@ import { generateId } from "./commonTools.mjs";
 import { globby } from "globby";
 import matter from "gray-matter";
 import fs from "fs-extra";
+import dayjs from "dayjs";
 
 /**
  * 获取 posts 目录下所有 Markdown 文件的路径
@@ -61,10 +62,14 @@ export const getAllPosts = async () => {
           // 解析 front matter
           const { data } = matter(content);
           const { title, date, categories, description, tags, top, cover } = data;
-          // 计算文章的过期天数
-          const expired = Math.floor(
-            (new Date().getTime() - new Date(date).getTime()) / (1000 * 60 * 60 * 24),
-          );
+          // 计算文章的过期天数（按天精度，避免时区和时间部分导致误差）
+          let expired = 0;
+          if (date) {
+            const nowDay = dayjs().startOf("day");
+            const postDay = dayjs(date).startOf("day");
+            const diff = nowDay.diff(postDay, "day");
+            expired = diff < 0 ? 0 : diff;
+          }
           // 返回文章对象
           return {
             id: generateId(item),

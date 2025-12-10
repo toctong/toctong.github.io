@@ -14308,8 +14308,8 @@ function createInfiniteHitsSessionStorageCache() {
 }
 
 // node_modules/.pnpm/instantsearch.js@4.77.0_algoliasearch@5.19.0/node_modules/instantsearch.js/es/lib/InstantSearch.js
-var import_events = __toESM(require_events());
-var import_algoliasearch_helper4 = __toESM(require_algoliasearch_helper2());
+var import_events = __toESM(require_events(), 1);
+var import_algoliasearch_helper4 = __toESM(require_algoliasearch_helper2(), 1);
 
 // node_modules/.pnpm/instantsearch.js@4.77.0_algoliasearch@5.19.0/node_modules/instantsearch.js/es/lib/utils/uuid.js
 function createUUID() {

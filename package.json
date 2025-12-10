@@ -51,7 +51,7 @@
     "@vueuse/core": "^11.3.0",
     "algoliasearch": "^5.19.0",
     "aplayer": "^1.10.1",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.19",
     "instantsearch.js": "^4.77.0",
     "lodash-es": "^4.17.21",
     "pinia": "^2.3.0",

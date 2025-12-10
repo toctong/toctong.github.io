@@ -2,7 +2,7 @@
 title: NestJS 学习笔记：从0到1实现鉴权的接口
 tags: [Node.js, NestJS, REST API, 学习笔记, 踩坑记录]
 categories: [后端]
-date: 2025-01-15
+date: 2025-11-15
 description: 记录我用 NestJS 从 0 搭出一个简单 REST API 服务的过程，包括项目初始化、模块划分、JWT 登录鉴权，以及中间遇到的一些坑。
 articleGPT: 这是一篇 NestJS 学习笔记，围绕“用户登录 + 文章列表”这个简单场景，从搭项目、模块划分、JWT 鉴权到接口调试，记录中间遇到的常见坑和解决思路。
 references: []
