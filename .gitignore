@@ -6,7 +6,12 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
+.vitepress/dist
+.vitepress/cache
+.vitepress/components.d.ts
+.vitepress/auto-imports.d.ts
+themeConfig.mjs
+!.vitepress/theme/assets/themeConfig.mjs
 node_modules/
 
 # Editor directories and files
